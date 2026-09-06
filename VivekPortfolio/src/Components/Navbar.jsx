@@ -3,14 +3,19 @@ import React from 'react'
 function Navbar() {
   return (
 
-    <div className='flex justify-center '> 
+    <div className='flex justify-center '> {/* Overall navbar inisde this div where it is centered horizontally */}
+ 
+ 
+ {/* The actual navbar inside the nav tag  and "navbar" is the special classname that is defined in the app.css */}
   <nav
-    className="navbar
-        fixed
+    className="
+       navbar
+        
+        fixed     
         top-6
         w-[90%]
 
-        left-1/2
+        left-1/2 
         -translate-x-1/2
         z-50
 
@@ -33,7 +38,9 @@ function Navbar() {
         shadow-[0_4px_30px_rgba(0,0,0,0.25)]
       "
     >
-      {/* LEFT SIDE */}
+
+
+      {/* LEFT SIDE : jo div vich hai jis vich saare links nehh , "navbar-links" -> coustom css class haii */}
       <div className="navbar-links flex items-center gap-10">
         <a
           href="#projects"
@@ -41,6 +48,7 @@ function Navbar() {
             text-white
             text-[15px]
             font-medium
+             font-family: 'Poppins',
             tracking-tight
             transition
             duration-300
@@ -51,10 +59,11 @@ function Navbar() {
         </a>
 
         <a
-          href="#testimonials"
+          href="about"
           className="
             text-white
             text-[15px]
+            font-family: 'Poppins ',
             font-medium
             tracking-tight
             transition
@@ -66,11 +75,12 @@ function Navbar() {
         </a>
 
         <a
-          href="#services"
-          className="
+          href="#skills"
+          className="navbar-link-skills
             text-white
             text-[15px]
             font-medium
+             font-family: 'Poppins',
             tracking-tight
             transition
             duration-300
@@ -81,11 +91,12 @@ function Navbar() {
         </a>
 
         <a
-          href="#about"
-          className="
+          href="#contact"
+          className="navbar-link-contact
             text-white
             text-[15px]
             font-medium
+             font-family: 'Poppins',
             tracking-tight
             transition
             duration-300
@@ -96,7 +107,7 @@ function Navbar() {
         </a>
       </div>
 
-      {/* CENTER LOGO */}
+      {/* CENTER LOGO : "navbar-logo" : css is defined in the app.css */}
       <div
         className="navbar-logo
           absolute
@@ -114,28 +125,16 @@ function Navbar() {
           "
         >
          <span style={{fontFamily: 'Poppins' , fontWeight: '700',marginRight: '0.25rem'}}> VIVEK </span> 
-          <span style={{fontFamily: 'Poppins', fontWeight: '400'}}> KUMAR </span>
+          <span style={{fontFamily: 'Poppins', fontWeight: '300'}}> KUMAR </span>
         </h2>
 
         
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="flex items-center gap-6">
-        {/* LANGUAGE */}
-        <div
-          className="
-            flex
-            items-center
-            gap-2
-            text-white
-            text-[15px]
-          "
-        >
-          
-        </div>
+      <div className="navbar-actions flex items-center gap-6">
 
-        {/* GET IN TOUCH wala button  */}
+        {/* GET IN TOUCH wala button . "navbar-button" -> hai own css vaste */}
         <button
           className="navbar-button
             px-6
@@ -155,7 +154,7 @@ function Navbar() {
             transition
             duration-300
 
-            hover:bg-white/10
+            hover:bg-white/15
             hover:border-white/60
           "
         >
@@ -164,6 +163,7 @@ function Navbar() {
 
 
       </div>
+      
     </nav>
   
 

@@ -1,3 +1,5 @@
+/* Making the whole webpage responsive by using the custom css classes */
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -195,7 +197,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 700px) {
   .navbar {
     height: 54px;
   }
@@ -204,12 +206,29 @@
     gap: 8px;
   }
 
+  .navbar-link-skills,
+  .navbar-link-contact {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding-inline: 12px;
+  }
+
+  .navbar-links {
+    gap: 8px;
+    min-width: 0;
+  }
+
   .navbar-links a {
     font-size: 10px !important;
   }
 
-  .navbar-logo {
-    display: none;
+  .navbar-actions {
+    flex-shrink: 0;
+    gap: 0;
   }
 
   .navbar-button {
