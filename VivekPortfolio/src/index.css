@@ -1,9 +1,61 @@
 @import "tailwindcss";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* Imported the font-family "poppins" from Google Fonts to use in the portfolio website. This font is used for all text elements in the website, providing a clean and modern look. */
+
+* {
+  font-family: "Poppins", sans-serif; 
+}
+
+@keyframes nameReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes scanner {
+  0% {
+    left: -80px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+/* These are the CSS animations used in the portfolio website. The "nameReveal" animation is used to reveal the name of the portfolio owner, while the "slideUp" animation is used to slide up elements on the page. The "fadeIn" animation is used to fade in elements, and the "scanner" animation is used for a scanning effect on certain elements. */
+
 :root{
     margin:0;
     padding:0;
     background: rgba(4,4,32);
     color: white;
-    font-family: 'Poppins', sans-serif;
 }
