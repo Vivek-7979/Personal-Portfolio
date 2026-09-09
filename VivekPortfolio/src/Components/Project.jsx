@@ -6,12 +6,12 @@ function Project({childern}) {
       
 
 <div>
-    <div> Image of Project </div>
+    {/* <div> Image of Project </div>
 
     <div> <h1>Title</h1>
          <p>descriptin about the project</p>
          <button>Technologies used</button>
-         </div>
+         </div> */}
 
 </div>
 

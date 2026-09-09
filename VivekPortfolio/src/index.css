@@ -5,7 +5,13 @@
 /* Imported the font-family "poppins" from Google Fonts to use in the portfolio website. This font is used for all text elements in the website, providing a clean and modern look. */
 
 * {
-  font-family: "Poppins", sans-serif; 
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 @keyframes nameReveal {

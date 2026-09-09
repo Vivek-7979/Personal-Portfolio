@@ -13,7 +13,7 @@ function Navbar() {
         
         fixed     
         top-6
-        w-[90%]
+        w-[85%]
 
         left-1/2 
         -translate-x-1/2
