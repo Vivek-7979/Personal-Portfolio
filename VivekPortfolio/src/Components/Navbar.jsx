@@ -134,7 +134,16 @@ function Navbar() {
             whitespace-nowrap
           "
         >
-         <span style={{fontFamily: 'Poppins' , fontWeight: '700',marginRight: '0.25rem'}}> VIVEK </span> 
+<span style={{fontFamily: 'Poppins' , fontWeight: '700',marginRight: '0.25rem' ,
+     background: 'linear-gradient(135deg, #98f5ff 0%, #7aa6ff 45%, #c7b7ff 100%)',
+    WebkitBackgroundClip: 'text',
+    backgroundClip: 'text',
+    color: 'transparent',
+    fontWeight: 700,}} >
+       VIVEK 
+       </span> 
+
+
           <span style={{fontFamily: 'Poppins', fontWeight: '300'}}> KUMAR </span>
         </h2>
       </a>

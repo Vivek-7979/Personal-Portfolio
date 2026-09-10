@@ -20,6 +20,10 @@ section[id="about"] {
   scroll-margin-top: 30px;
 }
 
+section[id='skills']{
+  scroll-margin-top:-7rem;
+}
+
 @keyframes nameReveal {
   0% {
     opacity: 0;
