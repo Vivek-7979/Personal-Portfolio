@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Navbar() {
   return (
 
@@ -59,7 +60,7 @@ function Navbar() {
         </a>
 
         <a
-          href="about"
+          href="#about"
           className="
             text-white
             text-[15px]
@@ -115,19 +116,28 @@ function Navbar() {
           -translate-x-1/2
         "
       >
+
+        <a href='#hero'>
         <h2
           className="
             text-white
             text-[25px]
-          
+
+            cursor-pointer
             tracking-tight
+
+            transition
+            duration-300
+            hover:text-white/40
+          
+            t
             whitespace-nowrap
           "
         >
          <span style={{fontFamily: 'Poppins' , fontWeight: '700',marginRight: '0.25rem'}}> VIVEK </span> 
           <span style={{fontFamily: 'Poppins', fontWeight: '300'}}> KUMAR </span>
         </h2>
-
+      </a>
         
       </div>
 
@@ -135,7 +145,7 @@ function Navbar() {
       <div className="navbar-actions flex items-center gap-6">
 
         {/* GET IN TOUCH wala button . "navbar-button" -> hai own css vaste */}
-        <button
+       <a href="#contact"> <button
           className="navbar-button
             px-6
             py-3
@@ -159,7 +169,7 @@ function Navbar() {
           "
         >
           Get in touch
-        </button>
+        </button></a>
 
 
       </div>

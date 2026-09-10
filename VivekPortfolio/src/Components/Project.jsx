@@ -5,7 +5,7 @@ function Project({childern}) {
     <div style={{ height: '100vh', width: '100vw' }}>
       
 
-<div>
+<div id='projects'>
     {/* <div> Image of Project </div>
 
     <div> <h1>Title</h1>

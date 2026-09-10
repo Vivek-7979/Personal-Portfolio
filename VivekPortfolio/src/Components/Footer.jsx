@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>
+    <div id='footer'>
       
 <ul> All The link 
     <li>Github</li>

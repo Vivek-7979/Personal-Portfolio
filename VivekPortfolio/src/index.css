@@ -12,6 +12,12 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
+section[id="about"] {
+  scroll-margin-top: 30px;
 }
 
 @keyframes nameReveal {

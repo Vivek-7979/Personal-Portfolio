@@ -1,4 +1,4 @@
-import React from 'react'
+﻿import React from 'react'
 import profile from '../assets/profile.PNG'
 import githubicon from '../assets/githubicon.svg'
 import linkdeinicon from '../assets/linkdeinicon.svg'
@@ -6,7 +6,6 @@ import twittericon from '../assets/twittericon.svg'
 
 function Hero() {
   const headingStyle = {
-    color: '#67E8F9',
     textShadow: '0 0 14px rgba(125, 211, 252, 0.25)',
   }
 
@@ -19,58 +18,78 @@ function Hero() {
   }
 
   return (
-      
-<div className='flex justify-between items-center w-full h-screen max-w-full overflow-x-hidden px-6 sm:px-10 lg:pl-30 lg:pr-10 pt-15 mb-6'> 
+    <div id='hero' className='w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-10 mt-25'>
+      <div className='flex w-[90%] max-w-310 items-center justify-between gap-8 max-[800px]:flex-col max-[800px]:justify-center max-[800px]:text-center max-[800px]:gap-6'>
+        <div className='w-full max-w-xl max-[800px]:max-w-lg'>
+          <p className='text-sm text-[#D7E3FF] sm:text-base'>Hi, I am</p>
 
-    <div className='max-w-full overflow-x-hidden'>
-        <p style={{ color: '#D7E3FF' }}> Hi , I am </p>
-        <h3 style={{color:'#F8FAFC'}} className='text-3xl font-medium mt-0.5 '> Vivek Kumar </h3>
+          <h3 className='mt-3 inline-block rounded bg-violet-400/10 px-1 py-1 text-lg font-semibold text-white sm:text-2xl md:text-3xl'>
+            Vivek Kumar
+          </h3>
 
-        <h1 style={headingStyle} className='text-5xl font-semibold mt-3'>
+          <h1
+            style={headingStyle}
+            className='mt-3 text-3xl font-semibold text-violet-300 sm:text-4xl md:text-5xl lg:text-6xl'
+          >
             FRONT - END
-        </h1>
+          </h1>
 
-        <h1 style={headingStyle} className='text-5xl font-semibold mt-3'> DEVELOPER</h1>
+          <h1
+            style={headingStyle}
+            className='mt-3 text-3xl font-semibold text-violet-300 sm:text-4xl md:text-5xl lg:text-6xl'
+          >
+            DEVELOPER
+          </h1>
 
-        <p className='mt-3 text-m' style={{ color: '#D7E3FF' }}> I specialize in creafting seamless User Interfaces  and delightful <br /> experience with <span style={accentText}>React.js . </span>    
-        I am a passionate front-end developer <br/> with experience in creating responsive and user-friendly websites. </p>
+          <p className='mt-3 text-sm leading-6 text-[#D7E3FF] sm:text-base md:text-lg'>
+            I specialize in crafting seamless user interfaces and delightful
+            experiences with <span style={accentText}>React.js</span>. I am a passionate
+            front-end developer with experience in creating responsive and user-friendly
+            websites.
+          </p>
 
-    <button  style={{ cursor:'pointer', filter:'drop-shadow(0 0 10px rgba(148, 163, 184, 0.75))'}} 
-    className='mt-8 px-6 py-3
-            rounded-full
+         <a href="#contact">
+          <button
+            style={{ cursor: 'pointer', filter: 'drop-shadow(0 0 10px rgba(148, 163, 184, 0.75))' }}
+            className='mt-6 rounded-full border border-white/40 bg-transparent px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:border-white/60 hover:bg-white/15 sm:px-6 sm:py-3 sm:text-[15px]'
+          >
+            View My Work
+          </button> </a>
 
-            border
-            border-white/40
 
-            text-white
-            text-[15px]
-            font-medium
+        </div>
 
-            bg-transparent
-           
+        <div className='flex flex-col items-center justify-center max-[800px]:mt-2'>
+          <img
+            src={profile}
+            alt='Profile'
+            className='block w-55 h-55 rounded-3xl border border-white/30 object-cover object-center shadow-[0_24px_60px_rgba(15,23,42,0.45)] md:w-75 md:h-87.5 max-[400px]:w-45 max-[400px]:h-45 max-[400px]:rounded-full max-[400px]:object-cover'
+          />
 
-            transition
-            duration-300
-
-            hover:bg-white/15
-            hover:border-white/60'> View My Work</button>
-
-    </div>
-
-    <div className='flex flex-col items-center justify-center lg:-ml-12 pr-20'>
-      <img src={profile} alt="Profile"   style={{width:'300px' , height:'350px',display:'block', objectFit:'cover', borderRadius:'24px', boxShadow:'0 24px 60px rgba(15, 23, 42, 0.45)', border:'1px solid rgba(148, 163, 184, 0.35)'}}/>
-
-      <div className='mt-5 flex items-center justify-center gap-10'>
-        <img src={githubicon} alt="GitHub" style={{ width:'40px', height:'40px', cursor:'pointer', filter:'brightness(0) invert(1) drop-shadow(0 0 10px rgba(148, 163, 184, 0.50))'}} onClick={() => window.open('https://github.com/vivekkumar', '_blank')} />
-        <img src={linkdeinicon} alt="LinkedIn" style={{width:'40px', height:'40px', cursor:'pointer', filter:'drop-shadow(0 0 10px rgba(148, 163, 184, 0.50))'}} onClick={() => window.open('https://linkedin.com/in/vivekkumar', '_blank')} />
-        <img src={twittericon} alt="Twitter" style={{width:'40px', height:'40px', cursor:'pointer', filter:'drop-shadow(0 0 10px rgba(148, 163, 184, 0.25))'}} onClick={() => window.open('https://github.com/vivekkumar', '_blank')} />
+          <div className='mt-5 flex items-center justify-center gap-5 sm:gap-7 md:gap-10'>
+            <img
+              src={githubicon}
+              alt='GitHub'
+              className='h-8 w-8 cursor-pointer brightness-0 invert drop-shadow-[0_0_10px_rgba(148,163,184,0.5)] sm:h-9 sm:w-9 md:h-10 md:w-10 max-[400px]:h-7 max-[400px]:w-7'
+              onClick={() => window.open('https://github.com/Vivek-7979', '_blank')}
+            />
+            <img
+              src={linkdeinicon}
+              alt='LinkedIn'
+              className='h-8 w-8 cursor-pointer drop-shadow-[0_0_10px_rgba(148,163,184,0.5)] sm:h-9 sm:w-9 md:h-10 md:w-10 max-[400px]:h-7 max-[400px]:w-7'
+              onClick={() => window.open('https://linkedin.com/in/vivek-kumar-441754299', '_blank')}
+            />
+            <img
+              src={twittericon}
+              alt='Twitter'
+              className='h-8 w-8 cursor-pointer drop-shadow-[0_0_10px_rgba(148,163,184,0.25)] sm:h-9 sm:w-9 md:h-10 md:w-10 max-[400px]:h-7 max-[400px]:w-7'
+              onClick={() => window.open('https://x.com/Vivek00855', '_blank')}
+            />
+          </div>
+        </div>
       </div>
+      <div className='border-0 border-t border-slate-400/20 mt-40 w-[82%]  mx-auto'></div>
     </div>
-
-</div>
-
-
-   
   )
 }
 
