@@ -397,7 +397,7 @@ const Skills = () => {
             Bottom Divider
         ---------------------------------- */}
 
-        <div className="mt-24 border-t border-violet-300/10 pt-10">
+        <div className="mt-24 border-t border-slate-400/30 pt-10">
 
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
 

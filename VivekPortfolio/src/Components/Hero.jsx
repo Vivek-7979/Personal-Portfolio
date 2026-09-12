@@ -48,7 +48,7 @@ function Hero() {
             websites.
           </p>
 
-         <a href="#contact">
+         <a href="#projects">
           <button
             style={{ cursor: 'pointer', filter: 'drop-shadow(0 0 10px rgba(148, 163, 184, 0.75))' }}
             className='mt-6 rounded-full border border-white/40 bg-transparent px-5 py-2.5 text-sm font-medium text-white transition duration-300 hover:border-white/60 hover:bg-white/15 sm:px-6 sm:py-3 sm:text-[15px]'
@@ -88,7 +88,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className='border-0 border-t border-slate-400/20 mt-40 w-[82%]  mx-auto'></div>
+      <div className='border-0 border-t border-slate-400/30 mt-40 w-[82%]  mx-auto'></div>
     </div>
   )
 }

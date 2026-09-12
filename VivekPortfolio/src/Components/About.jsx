@@ -86,7 +86,7 @@ const About = () => {
            
           </div>
         </div>
-         <hr className="border-0 border-t border-slate-400/20 mt-40 w-[95%]  mx-auto" />
+         <hr className="border-0 border-t border-slate-400/30 mt-40 w-[95%]  mx-auto" />
       </div>
       
     </section>
