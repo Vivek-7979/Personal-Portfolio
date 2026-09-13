@@ -11,11 +11,11 @@ const About = () => {
           </p>
         </div>
 
-        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.05] mb-4 lg:mb-5">
+        <h2 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.05] mb-4 lg:mb-5">
           Building digital
           <br className="mb-2 block" />
           <span className="text-violet-300">experiences</span> with code.
-        </h1>
+        </h2>
 
         <div className="grid lg:grid-cols-[1.4fr_0.8fr] gap-5 lg:gap-6 items-center">
           <div className="space-y-3 text-center lg:text-left">

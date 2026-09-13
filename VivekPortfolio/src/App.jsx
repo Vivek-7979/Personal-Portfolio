@@ -8,21 +8,29 @@ import Footer from './Components/Footer'
 import { useState } from 'react'
 import Loader from './Components/Loader'
 import About from './Components/About'
+import Education from './Components/Education'
 
 function App() {
-
    const [loading, setLoading] = useState(true);
+
   return (
     <>
-        {   loading && ( <Loader onComplete={() => { setLoading(false);}} /> )   }    {/*Loading Component is displayed when loading is true */}
-     <Navbar />
-     <Hero />
-     <About />
-     <Project />
-     <Skills />
-     <ContactForm />
-    <Footer />
+      {loading && <Loader onComplete={() => setLoading(false)} />}
 
+      <header>
+        <Navbar />
+      </header>
+
+      <main id="main-content">
+        <Hero />
+        <About />
+        <Project />
+        <Skills />
+        <Education />
+        <ContactForm />
+      </main>
+
+      <Footer />
     </>
   )
 }

@@ -1,4 +1,8 @@
 import React, { useRef } from "react";
+import pranhtaProject from "../assets/pranhtaProject.png";
+import netflixProject from "../assets/netflixProject.png";
+import Blogproject from "../assets/Blogproject.png";
+import portfolio from "../assets/portfolio.png";
 
 const projects = [
   {
@@ -6,10 +10,10 @@ const projects = [
     title: "Netflix Clone",
     description:
       "A web-based movie streaming platform with user authentication, movie browsing, search and watch features.",
-    image: "/projects/netflix.png",
-    technologies: ["React.js", "Tailwind CSS", "Firebase",  "TMDB API"],
-    github: "https://github.com/Vivek-7979/Netflix-Clone",
-    live: "#",
+    image: netflixProject,
+    technologies: ["React.js", "Tailwind CSS", "Firebase", "TMDB API"],
+    github: "https://github.com/Vivek-7979/Netflix-Clone-Vivek",
+    live: "https://netflix-clone-vivek-rho.vercel.app/login",
   },
 
   {
@@ -17,7 +21,7 @@ const projects = [
     title: "Blog App",
     description:
       "A full-stack blog application with user authentication, create, edit, delete posts and a modern responsive UI.",
-    image: "/projects/blog.png",
+    image: Blogproject,
     technologies: ["React.js", "Tailwind CSS", "Appwrite", "React Router"],
     github: "https://github.com/Vivek-7979/My-Blog-App-",
     // live: "#", I will soon deploy it but yet i havenot
@@ -25,23 +29,23 @@ const projects = [
 
   {
     id: 3,
-    title: "Portfolio Website",
+    title: "Personal Portfolio",
     description:
       "A modern developer portfolio website designed to showcase my skills, projects, technologies and development journey.",
-    image: "/projects/portfolio.png",
+    image: portfolio,
     technologies: ["React.js", "Tailwind CSS", "JavaScript"],
     github: "https://github.com/Vivek-7979/Personal-Portfolio",
-    live: "#",
+    live: "https://github.com/Vivek-7979/Personal-Portfolio",
   },
 
   {
     id: 4,
-    title: "Weather App",
+    title: "Prantha Nation",
     description:
-      "A responsive weather application that displays current weather information using a weather API.",
-    image: "/projects/weather.png",
-    technologies: ["React.js", "Tailwind CSS", "Weather API"],
-    github: "#",
+      "A modern responsive restaurant website built with React.js and Tailwind CSS, featuring menu, offers and form.",
+    image: pranhtaProject,
+    technologies: ["React.js", "Tailwind CSS", "tool-copilot"],
+    github: "https://github.com/Vivek-7979/Prantha-Nation-Website",
     // live: "#", I dont have the live link of this 
   },
 ];
@@ -154,18 +158,35 @@ const Project = () => {
                   border-white/10
                 "
               >
-                <img
-                  src={project.image}
-                  alt={`${project.title} project`}
-                  className="
-                    w-full
-                    h-full
-                    object-cover
-                    transition-transform
-                    duration-700
-                    group-hover:scale-105
-                  "
-                />
+                {project.id === 1 || project.id === 3 ? (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block h-full w-full cursor-pointer"
+                    aria-label={`Open ${project.title} live project`}
+                  >
+                    <img
+                      src={project.image}
+                      alt={`${project.title} project preview`}
+                      className="h-full w-full object-cover"
+                      loading="lazy"
+                      decoding="async"
+                      width="800"
+                      height="500"
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src={project.image}
+                    alt={`${project.title} project preview`}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                    width="800"
+                    height="500"
+                  />
+                )}
 
                 {/* Image Overlay */}
                 <div
@@ -180,6 +201,7 @@ const Project = () => {
                     group-hover:opacity-30
                     transition-opacity
                     duration-500
+                    pointer-events-none
                   "
                 />
               </div>
@@ -290,61 +312,63 @@ const Project = () => {
                   </a>
 
                   {/* Live Demo */}
-                  <a
-                    href={project.live ? project.live : "#"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                      group/link
-                      flex
-                      items-center
-                      gap-2
-                      text-violet-300
-                      text-sm
-                      font-medium
-                      transition-colors
-                      duration-300
-                      hover:text-white
-                    "
-                  >
-
-                    {/* External Link Icon */}
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth="1.8"
-                      stroke="currentColor"
+                  {project.live && project.live !== "#" && (
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="
-                        w-5
-                        h-5
-                        transition-transform
+                        group/link
+                        flex
+                        items-center
+                        gap-2
+                        text-violet-300
+                        text-sm
+                        font-medium
+                        transition-colors
                         duration-300
-                        group-hover/link:translate-x-0.5
-                        group-hover/link:-translate-y-0.5
+                        hover:text-white
                       "
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M13.5 6H19.5V12"
-                      />
 
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M10.5 13.5L19.5 4.5"
-                      />
+                      {/* External Link Icon */}
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth="1.8"
+                        stroke="currentColor"
+                        className="
+                          w-5
+                          h-5
+                          transition-transform
+                          duration-300
+                          group-hover/link:translate-x-0.5
+                          group-hover/link:-translate-y-0.5
+                        "
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M13.5 6H19.5V12"
+                        />
 
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M18 13.5V18C18 18.8284 17.3284 19.5 16.5 19.5H6C5.17157 19.5 4.5 18.8284 4.5 18V7.5C4.5 6.67157 5.17157 6 6 6H10.5"
-                      />
-                    </svg>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M10.5 13.5L19.5 4.5"
+                        />
 
-                    <span>Live Demo</span>
-                  </a>
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M18 13.5V18C18 18.8284 17.3284 19.5 16.5 19.5H6C5.17157 19.5 4.5 18.8284 4.5 18V7.5C4.5 6.67157 5.17157 6 6 6H10.5"
+                        />
+                      </svg>
+
+                      <span>Live Demo</span>
+                    </a>
+                  )}
 
                 </div>
 
