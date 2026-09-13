@@ -35,21 +35,20 @@ function Hero() {
           <p className='text-sm text-[#D7E3FF] sm:text-base'>Hi, I am</p>
 
           <h1
-            style={headingStyle}
-            className='mt-3 text-3xl font-semibold text-violet-300 sm:text-4xl md:text-5xl lg:text-6xl'
-          >
-            Vivek Kumar — Frontend Developer
+            style={headingStyle} >
+           <span className='inline-block mt-2 px-1 py-1 rounded-sm bg-[#111840] shadow-[0_0_20px_rgba(139,92,246,0.15)]  text-xl font-semibold   sm:text-2xl md:text-3xl lg:text-4xl mb-2' >  Vivek Kumar </span> <br />
+             <span style={accentText}  className=' text-3xl font-semibold text-violet-300 sm:text-4xl md:text-5xl lg:text-6xl'>FRONT-END DEVELOPER</span> 
           </h1>
 
-          <p className='mt-3 text-sm leading-6 text-[#D7E3FF] sm:text-base md:text-lg'>
+          <p className='mt-4 text-sm leading-6 text-[#D7E3FF] sm:text-base md:text-lg'>
             I specialize in crafting seamless user interfaces and delightful
             experiences with <span style={accentText}>React.js</span>. I am a passionate
             front-end developer with experience in creating responsive and user-friendly
             websites.
           </p>
 
-          <div className='mt-6 flex flex-wrap items-center gap-3 '>
-            <a href="#projects">
+          <div className='mt-6 flex w-full max-w-110 flex-wrap items-center justify-center gap-3 md:justify-around max-[800px]:mx-auto max-[800px]:w-full'>
+            <a href="#projects" className='inline-flex'>
               <button
                 type='button'
                 style={{ cursor: 'pointer', filter: 'drop-shadow(0 0 10px rgba(148, 163, 184, 0.75))' }}
