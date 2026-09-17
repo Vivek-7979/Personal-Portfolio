@@ -35,7 +35,7 @@ const projects = [
     image: portfolio,
     technologies: ["React.js", "Tailwind CSS", "JavaScript"],
     github: "https://github.com/Vivek-7979/Personal-Portfolio",
-    live: "https://github.com/Vivek-7979/Personal-Portfolio",
+    live: "https://vivekportfolio-five.vercel.app/",
   },
 
   {
