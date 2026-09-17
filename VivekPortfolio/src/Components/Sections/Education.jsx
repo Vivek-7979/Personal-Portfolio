@@ -1,5 +1,5 @@
-import certificate1 from '../assets/certificate1.jpeg'
-import certificate2 from '../assets/certificate2.jpeg'
+import certificate1 from '../../assets/certificate1.jpeg'
+import certificate2 from '../../assets/certificate2.jpeg'
 
 
 const Education = () => {

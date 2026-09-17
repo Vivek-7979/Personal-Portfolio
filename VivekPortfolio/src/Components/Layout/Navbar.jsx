@@ -1,6 +1,6 @@
 import React from 'react'
-import resume from '../assets/resume.svg'
-import VivekResume from '../assets/Vivek-Kumar_Frontend_Developer_Resume.pdf'
+import resume from '../../assets/resume.svg'
+import VivekResume from '../../assets/Vivek-Kumar_Frontend_Developer_Resume.pdf'
 
 
 

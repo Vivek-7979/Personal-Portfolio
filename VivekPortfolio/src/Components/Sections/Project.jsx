@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import pranhtaProject from "../assets/pranhtaProject.png";
-import netflixProject from "../assets/netflixProject.png";
-import Blogproject from "../assets/Blogproject.png";
-import portfolio from "../assets/portfolio.png";
+import pranhtaProject from "../../assets/pranhtaProject.png";
+import netflixProject from "../../assets/NetflixProject.png";
+import Blogproject from "../../assets/Blogproject.png";
+import portfolio from "../../assets/portfolio.PNG";
 
 const projects = [
   {

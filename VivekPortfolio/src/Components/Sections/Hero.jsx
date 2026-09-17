@@ -1,10 +1,10 @@
 ﻿import React from 'react'
-import profile from '../assets/profile.PNG'
-import githubicon from '../assets/githubicon.svg'
-import linkdeinicon from '../assets/linkdeinicon.svg'
-import twittericon from '../assets/twittericon.svg'
-import resume from '../assets/resume.svg'
-import VivekResume from '../assets/Vivek-Kumar_Frontend_Developer_Resume.pdf'
+import profile from '../../assets/profile.PNG'
+import githubicon from '../../assets/githubicon.svg'
+import linkdeinicon from '../../assets/linkdeinicon.svg'
+import twittericon from '../../assets/twittericon.svg'
+import resume from '../../assets/resume.svg'
+import VivekResume from '../../assets/Vivek-Kumar_Frontend_Developer_Resume.pdf'
 
 function Hero() {
   const headingStyle = {
