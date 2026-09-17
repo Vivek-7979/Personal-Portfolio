@@ -74,7 +74,7 @@ const ContactForm = () => {
         {/* Contact Content */}
         <div className="flex items-center justify-center gap-8 lg:gap-12">
 
-          {/* Left Form */}
+          {/* Left Form : This is the display that will be seen when the form is submittedd sucessfully / failed : otherwise simple form  */}
           <div className="w-full lg:w-1/2 max-w-xl">
             {isSubmitted ? (
               <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-900/80 p-6 shadow-[0_20px_50px_rgba(139,92,246,0.1)] backdrop-blur-sm sm:p-8">
@@ -110,6 +110,11 @@ const ContactForm = () => {
                   </button>
                 </div>
               </div>
+
+
+
+
+
             ) : (
               <form className="space-y-3" onSubmit={onSubmit}>
                 <div>
