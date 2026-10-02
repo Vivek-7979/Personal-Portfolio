@@ -24,6 +24,7 @@ const projects = [
     image: Blogproject,
     technologies: ["React.js", "Tailwind CSS", "Appwrite", "React Router"],
     github: "https://github.com/Vivek-7979/My-Blog-App-",
+    live: "https://blogsphere-rho.vercel.app/",
     // live: "#", I will soon deploy it but yet i havenot
   },
 
